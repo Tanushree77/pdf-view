@@ -1,7 +1,7 @@
 import { Box, Grid, GridItem, Text } from '@chakra-ui/react'
 import React from 'react'
 import { FiPlay } from 'react-icons/fi'
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import NavbarComponent from '../components/NavbarComponent';
 
 

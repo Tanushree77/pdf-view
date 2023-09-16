@@ -42,15 +42,16 @@ const PDFViewer = () => {
         {Array.from( new Array(numPages), (el, index) => (
            <Page
             // key={`page_${index + 1}`}
+            // key={index}
             
-             pageIndex={1}
+             pageNumber={1}
              renderTextLayer={false}
              renderAnnotationLayer={false}
              width={window.innerWidth}
              height={window.innerHeight}
               />
         ))
-          }
+        }
          
         
       </Document>
