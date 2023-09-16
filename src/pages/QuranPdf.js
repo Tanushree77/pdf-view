@@ -8,8 +8,11 @@ import NavbarComponent from '../components/NavbarComponent';
 export default function QuranPdf() {
     const navigate = useNavigate();
 
+    
+
     // const pdfs = (require.context('../assets/pdfs', true, /\.pdf$/)).keys().map((pdf) => pdf.split('/')[1]);
     const pdfs = (require.context('/public/assets/pdfs', true, /\.pdf$/)).keys().map((pdf) => pdf.split('/')[1]);
+
 
     window.addEventListener('contextmenu', function (e) {
         e.preventDefault();

@@ -39,14 +39,19 @@ const PDFViewer = () => {
 
       <div className='' >
       <Document  file={pdfLink} onLoadSuccess={onDocumentLoadSuccess} >
-          <Page
-          //  key={`page_${index + 1}`}
-            pageIndex={1}
-            renderTextLayer={false}
-            renderAnnotationLayer={false}
-            width={window.innerWidth}
-            height={window.innerHeight}
-             />
+        {Array.from( new Array(numPages), (el, index) => (
+           <Page
+            // key={`page_${index + 1}`}
+            
+             pageIndex={1}
+             renderTextLayer={false}
+             renderAnnotationLayer={false}
+             width={window.innerWidth}
+             height={window.innerHeight}
+              />
+        ))
+          }
+         
         
       </Document>
       </div>
