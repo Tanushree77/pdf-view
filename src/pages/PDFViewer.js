@@ -9,6 +9,8 @@ const PDFViewer = () => {
   const pdfLink = location.state.pdfLink;
   const [numPages, setNumPages] = useState(null);
 
+  console.log(pdfLink);
+
   const onDocumentLoadSuccess = ({ numPages }) => {
     setNumPages(numPages);
   }
